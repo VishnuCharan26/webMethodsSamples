@@ -1,0 +1,40 @@
+<Configuration>
+    <Appenders>
+        <File name="SLBosAccountUserFA" fileName="./logs/SLBosAccountUser/SLBosAccountUser.log">
+            <PatternLayout pattern="%d [%t] %-5p  %c - %m%n"/>
+        </File>
+        <Async name="SLBosAccountUserAA">
+            <AppenderRef ref="SLBosAccountUserFA"/>
+        </Async>
+        <File name="SOASLBosAccountUserFA" fileName="./logs/SLBosAccountUser/SOASLBosAccountUser.log">
+            <PatternLayout pattern="%d [%t] %-5p  %c - %m%n"/>
+        </File>
+        <Async name="SOASLBosAccountUserAA">
+            <AppenderRef ref="SOASLBosAccountUserFA"/>
+        </Async>
+    
+        <File name="AccountMemoFA" fileName="./logs/AccountMemo/AccountMemo.log">
+            <PatternLayout pattern="%d [%t] %-5p  %c - %m%n"/>
+        </File>
+        <DailyRollingFileAppender name="AccountMemoDRA" fileName="./logs/AccountMemo/AccountMemo.log"
+                                  datePattern="'.'yyyy-MM-dd">
+            <PatternLayout pattern="%d [%t] %-5p  %c - %m%n"/>
+        </DailyRollingFileAppender>
+        <Async name="AccountMemoAA">
+            <AppenderRef ref="AccountMemoFA"/>
+            <AppenderRef ref="AccountMemoDRA"/>
+        </Async>
+    </Appenders>
+    <Loggers>
+        <Logger name="SLBosAccountUser.DefaultLogger" level="info">
+            <AppenderRef ref="SLBosAccountUserAA"/>
+        </Logger>
+        <Logger name="SOASLBosAccountUser.DefaultLogger" level="info">
+            <AppenderRef ref="SOASLBosAccountUserAA"/>
+        </Logger>    
+	    
+        <Logger name="AccountMemo.DefaultLogger" level="info">
+            <AppenderRef ref="AccountMemoAA"/>
+        </Logger>
+    </Loggers>
+</Configuration>

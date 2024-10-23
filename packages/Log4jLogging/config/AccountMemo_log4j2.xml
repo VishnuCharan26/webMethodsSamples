@@ -1,0 +1,20 @@
+<Configuration name="AccountMemo">
+    <Appenders>
+        <File name="AccountMemoFA" fileName="./logs/AccountMemo/AccountMemo.log">
+            <PatternLayout pattern="%d [%t] %-5p  %c - %m%n"/>
+        </File>
+        <DailyRollingFileAppender name="AccountMemoDRA" fileName="./logs/AccountMemo/AccountMemo.log"
+                                  datePattern="'.'yyyy-MM-dd">
+            <PatternLayout pattern="%d [%t] %-5p  %c - %m%n"/>
+        </DailyRollingFileAppender>
+        <Async name="AccountMemoAA">
+            <AppenderRef ref="AccountMemoFA"/>
+            <AppenderRef ref="AccountMemoDRA"/>
+        </Async>
+    </Appenders>
+    <Loggers>
+        <Logger name="AccountMemo.DefaultLogger" level="info">
+            <AppenderRef ref="AccountMemoAA"/>
+        </Logger>
+    </Loggers>
+</Configuration>

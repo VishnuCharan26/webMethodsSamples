@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">log</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">Ly8gcGlwZWxpbmUNCklEYXRhQ3Vyc29yIHBpcGVsaW5lQ3Vyc29yID0gcGlwZWxpbmUuZ2V0Q3Vy
+c29yKCk7DQoNCnRyeSB7DQoJU3RyaW5nCW1lc3NhZ2UgPSBJRGF0YVV0aWwuZ2V0U3RyaW5nKCBw
+aXBlbGluZUN1cnNvciwgIm1lc3NhZ2UiICk7DQoJU3RyaW5nCWxldmVsU3RyID0gSURhdGFVdGls
+LmdldFN0cmluZyggcGlwZWxpbmVDdXJzb3IsICJsZXZlbCIgKTsNCglTdHJpbmcgbG9nZ2VyTmFt
+ZT1JRGF0YVV0aWwuZ2V0U3RyaW5nKCBwaXBlbGluZUN1cnNvciwgImxvZ2dlck5hbWUiICk7DQoJ
+DQoNCglMZXZlbCBsZXZlbCA9IExldmVsLmdldExldmVsKGxldmVsU3RyKTsNCglMb2dnZXIgbG9n
+Z2VyID0gbG9nQ3R4LmdldExvZ2dlcihsb2dnZXJOYW1lKTsNCgkNCglpZiAobG9nZ2VyLmlzRW5h
+YmxlZChsZXZlbCkpIHsNCgkJbG9nZ2VyLmxvZyhsZXZlbCxtZXNzYWdlKTsNCgl9DQoJDQp9Zmlu
+YWxseSB7DQoJcGlwZWxpbmVDdXJzb3IuZGVzdHJveSgpOw0KfQ0KDQovLyBwaXBlbGluZQ==</value>
+</Values>
